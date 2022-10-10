@@ -1505,11 +1505,11 @@ test = ["pre-commit", "pytest"]
 
 [[package]]
 name = "transmission-rpc"
-version = "3.3.2"
+version = "3.4.0"
 description = "Python module that implements the Transmission bittorent client JSON-RPC protocol"
 category = "main"
 optional = false
-python-versions = ">=3.7,<4.0"
+python-versions = ">=3.7.2,<4.0.0"
 
 [package.dependencies]
 requests = ">=2.23.0,<3.0.0"
@@ -1703,7 +1703,6 @@ click = [
 ]
 codecov = [
     {file = "codecov-2.1.12-py2.py3-none-any.whl", hash = "sha256:585dc217dc3d8185198ceb402f85d5cb5dbfa0c5f350a5abcdf9e347776a5b47"},
-    {file = "codecov-2.1.12-py3.8.egg", hash = "sha256:782a8e5352f22593cbc5427a35320b99490eb24d9dcfa2155fd99d2b75cfb635"},
     {file = "codecov-2.1.12.tar.gz", hash = "sha256:a0da46bb5025426da895af90938def8ee12d37fcbcbbbc15b6dc64cf7ebc51c1"},
 ]
 colorama = [
@@ -2279,7 +2278,6 @@ stack-data = [
 ]
 tabulate = [
     {file = "tabulate-0.8.10-py3-none-any.whl", hash = "sha256:0ba055423dbaa164b9e456abe7920c5e8ed33fcc16f6d1b2f2d152c8e1e8b4fc"},
-    {file = "tabulate-0.8.10-py3.8.egg", hash = "sha256:436f1c768b424654fce8597290d2764def1eea6a77cfa5c33be00b1bc0f4f63d"},
     {file = "tabulate-0.8.10.tar.gz", hash = "sha256:6c57f3f3dd7ac2782770155f3adb2db0b1a269637e42f27599925e64b114f519"},
 ]
 termcolor = [
@@ -2310,8 +2308,8 @@ traitlets = [
     {file = "traitlets-5.3.0.tar.gz", hash = "sha256:0bb9f1f9f017aa8ec187d8b1b2a7a6626a2a1d877116baba52a129bfa124f8e2"},
 ]
 transmission-rpc = [
-    {file = "transmission-rpc-3.3.2.tar.gz", hash = "sha256:288500a3d9663786110476245824d94e0731ff6ea20eec582892e95ca304ba0e"},
-    {file = "transmission_rpc-3.3.2-py3-none-any.whl", hash = "sha256:600aeaf1470749bfb64d78f25fc541a05972eeb124a6c2c654f1303ff653f975"},
+    {file = "transmission-rpc-3.4.0.tar.gz", hash = "sha256:1f1d8d1bda148955a03f759d121059b2cb8c5d288b892c34f7982b5e9df591dc"},
+    {file = "transmission_rpc-3.4.0-py3-none-any.whl", hash = "sha256:777016b0a8031aafc070706e9ee78176c23b38b6ffe784fc3ce7cbfa0bb50b6e"},
 ]
 typing-extensions = [
     {file = "typing_extensions-4.3.0-py3-none-any.whl", hash = "sha256:25642c956049920a5aa49edcdd6ab1e06d7e5d467fc00e0506c44ac86fbfca02"},
