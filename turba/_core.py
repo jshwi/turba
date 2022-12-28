@@ -158,7 +158,7 @@ class Approved(_MutableMapping[str, str]):
         self, magnets: Magnets, *args: Blacklist | Downloading
     ) -> None:
         super().__init__()
-        exclusions = set(i for v in args for i in v)
+        exclusions = {i for v in args for i in v}
         for name, magnet in magnets.items():
             if name not in exclusions:
                 self[name] = magnet
