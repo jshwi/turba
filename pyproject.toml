@@ -1,7 +1,7 @@
 [build-system]
 build-backend = "poetry.core.masonry.api"
 requires = [
-    "poetry-core>=1.0.0",
+  "poetry-core>=1.0.0"
 ]
 
 [tool.black]
@@ -19,14 +19,14 @@ skip-magic-trailing-comma = true
 
 [tool.coverage.report]
 exclude_lines = [
-    "@_t.overload",
+  "@_t.overload"
 ]
 fail_under = 100
 
 [tool.coverage.run]
 omit = [
-    "whitelist.py",
-    "turba/__main__.py",
+  "turba/__main__.py",
+  "whitelist.py"
 ]
 
 [tool.docsig]
@@ -43,20 +43,20 @@ use_parentheses = true
 
 [tool.poetry]
 authors = [
-    "jshwi <stephen@jshwisolutions.com>",
+  "jshwi <stephen@jshwisolutions.com>"
 ]
 description = "Turbocharged torrent scraper"
 documentation = "https://turba.readthedocs.io/en/latest/?badge=latest"
 homepage = "https://pypi.org/project/turba/"
 keywords = [
-    "torrent",
-    "scraper",
-    "transmission",
-    "web",
+  "scraper",
+  "torrent",
+  "transmission",
+  "web"
 ]
 license = "MIT"
 maintainers = [
-    "jshwi <stephen@jshwisolutions.com>",
+  "jshwi <stephen@jshwisolutions.com>"
 ]
 name = "turba"
 readme = "README.rst"
@@ -88,32 +88,32 @@ turba = "turba.__main__:main"
 
 [tool.pyaud.audit]
 modules = [
-    "toc",
-    "whitelist",
-    "sort-pyproject",
-    "format",
-    "format-docs",
-    "format-str",
-    "imports",
-    "typecheck",
-    "unused",
-    "lint",
-    "const",
-    "test",
-    "docs",
+  "const",
+  "docs",
+  "format",
+  "format-docs",
+  "format-str",
+  "imports",
+  "lint",
+  "sort-pyproject",
+  "test",
+  "toc",
+  "typecheck",
+  "unused",
+  "whitelist"
 ]
 
 [tool.pyaud.clean]
 exclude = [
-    "*.egg*",
-    ".mypy_cache",
-    ".env",
+  "*.egg*",
+  ".env",
+  ".mypy_cache"
 ]
 
 [tool.pyaud.indexing]
 exclude = [
-    "whitelist.py",
-    "conf.py",
+  "conf.py",
+  "whitelist.py"
 ]
 
 [tool.pyaud.logging]
@@ -132,24 +132,24 @@ when = "d"
 
 [tool.pyaud.logging.root]
 handlers = [
-    "default",
+  "default"
 ]
 level = "DEBUG"
 propagate = false
 
 [tool.pytest.ini_options]
 addopts = [
-    "--durations=5",
-    "-vv",
-    "--color=yes",
-    "--cov-report",
-    "term-missing",
+  "--color=yes",
+  "--cov-report",
+  "--durations=5",
+  "-vv",
+  "term-missing"
 ]
 filterwarnings = "ignore::DeprecationWarning"
 norecursedirs = [
-    "docs",
-    "*.egg-info",
-    ".git",
-    ".mypy_cache",
-    ".idea",
+  "*.egg-info",
+  ".git",
+  ".idea",
+  ".mypy_cache",
+  "docs"
 ]
