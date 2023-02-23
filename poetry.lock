@@ -2444,28 +2444,27 @@ test = ["argcomplete (>=2.0)", "pre-commit", "pytest", "pytest-mock"]
 
 [[package]]
 name = "transmission-rpc"
-version = "3.4.0"
+version = "4.0.0"
 description = "Python module that implements the Transmission bittorent client JSON-RPC protocol"
 category = "main"
 optional = false
-python-versions = ">=3.7.2,<4.0.0"
+python-versions = ">=3.8,<4.0"
 files = [
-    {file = "transmission-rpc-3.4.0.tar.gz", hash = "sha256:1f1d8d1bda148955a03f759d121059b2cb8c5d288b892c34f7982b5e9df591dc"},
-    {file = "transmission_rpc-3.4.0-py3-none-any.whl", hash = "sha256:777016b0a8031aafc070706e9ee78176c23b38b6ffe784fc3ce7cbfa0bb50b6e"},
+    {file = "transmission_rpc-4.0.0-py3-none-any.whl", hash = "sha256:c207d722b24e0c9019fc891b3f6dba08bf2d44229ae102c9c5ce4d8176733fc6"},
+    {file = "transmission_rpc-4.0.0.tar.gz", hash = "sha256:eab08e8ea399aef60ec95cf40686a3cf70ef09cf1df046d17e48fc5e25157d16"},
 ]
 
 [package.dependencies]
 requests = ">=2.23.0,<3.0.0"
-typing_extensions = ">=3.7.4.2,<5.0.0.0"
 
 [package.extras]
-docs = ["sphinx (==4.3.2)", "sphinx-rtd-theme (==1.0.0)"]
+docs = ["sphinx (==6.1.3)", "sphinx-rtd-theme (==1.2.0)"]
 
 [[package]]
 name = "typing-extensions"
 version = "4.4.0"
 description = "Backported and Experimental Type Hints for Python 3.7+"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -2654,4 +2653,4 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "92a7ed240406728ca2b0fb5e81368c2dd6735fcbc5e80ba47c6af225de9de030"
+content-hash = "b4512572ab28e700615af9a507face0d751b51f42c74e541cdd5f3855c2f8d35"
