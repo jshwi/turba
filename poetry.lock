@@ -2398,22 +2398,19 @@ test = ["argcomplete (>=2.0)", "pre-commit", "pytest", "pytest-mock"]
 
 [[package]]
 name = "transmission-rpc"
-version = "3.4.2"
+version = "4.2.1"
 description = "Python module that implements the Transmission bittorent client JSON-RPC protocol"
 category = "main"
 optional = false
-python-versions = ">=3.7.2,<4.0.0"
+python-versions = ">=3.7,<4.0"
 files = [
-    {file = "transmission_rpc-3.4.2-py3-none-any.whl", hash = "sha256:0696128c3db23ba3a12a6f337900e19271abe3c8cb10a944c463b12a2b9b42e0"},
-    {file = "transmission_rpc-3.4.2.tar.gz", hash = "sha256:dad1ef2fd936c23d4d637ebc8637fe7eb8660f84f1f98449a79c68c6d17f142a"},
+    {file = "transmission_rpc-4.2.1-py3-none-any.whl", hash = "sha256:2b2a9d49d73669e1da6a417163e7df0d0dedc1fc7366c1a2e888efe3b718e9c9"},
+    {file = "transmission_rpc-4.2.1.tar.gz", hash = "sha256:8712c37763e25eef84b9f89ab904671874c394e67ac04398eccab4bbd5632436"},
 ]
 
 [package.dependencies]
 requests = ">=2.23.0,<3.0.0"
-typing_extensions = ">=3.7.4.2,<5.0.0.0"
-
-[package.extras]
-docs = ["sphinx (==4.3.2)", "sphinx-rtd-theme (==1.0.0)"]
+typing-extensions = "*"
 
 [[package]]
 name = "typing-extensions"
@@ -2648,4 +2645,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "d798f2d087b90ae2b9010e0662873abd0c07d7729fb759cd8f8f54657de23ebe"
+content-hash = "c7cad1d516fc6986403458d20875e227090e214b495486e4a655e5ebc8a00646"
