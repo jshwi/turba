@@ -2444,14 +2444,14 @@ test = ["argcomplete (>=2.0)", "pre-commit", "pytest", "pytest-mock"]
 
 [[package]]
 name = "transmission-rpc"
-version = "4.0.0"
+version = "4.1.0"
 description = "Python module that implements the Transmission bittorent client JSON-RPC protocol"
 category = "main"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "transmission_rpc-4.0.0-py3-none-any.whl", hash = "sha256:c207d722b24e0c9019fc891b3f6dba08bf2d44229ae102c9c5ce4d8176733fc6"},
-    {file = "transmission_rpc-4.0.0.tar.gz", hash = "sha256:eab08e8ea399aef60ec95cf40686a3cf70ef09cf1df046d17e48fc5e25157d16"},
+    {file = "transmission_rpc-4.1.0-py3-none-any.whl", hash = "sha256:704d6aa206d0ee4d7145eba22b5a0c457690b4b9070914bb679f1e85723fc258"},
+    {file = "transmission_rpc-4.1.0.tar.gz", hash = "sha256:7fd2085bccafc3c456052ba71377c5cc4579e88cb544d508532342f183f719dc"},
 ]
 
 [package.dependencies]
