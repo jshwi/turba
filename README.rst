@@ -43,8 +43,8 @@ turba
     :target: https://snyk.io/test/github/jshwi/turba/badge.svg
     :alt: Known Vulnerabilities
 .. image:: https://snyk.io/advisor/python/turba/badge.svg
-  :target: https://snyk.io/advisor/python/turba
-  :alt: turba
+    :target: https://snyk.io/advisor/python/turba
+    :alt: turba
 
 Turbocharged torrent scraper
 ----------------------------
