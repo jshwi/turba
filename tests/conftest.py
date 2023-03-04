@@ -4,6 +4,7 @@ tests.conftest
 """
 from pathlib import Path
 
+import appdirs
 import pytest
 
 import turba
@@ -37,12 +38,13 @@ def fixture_env(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
 
 
 @pytest.fixture(name=INIT_SETTINGS_JSON)
-def fixture_init_settings_json(tmp_path: Path) -> None:
-    """Create test ``transmission-daemon`` settings file.
-
-    :param tmp_path: Create and return temporary directory.
-    """
-    settings = tmp_path / ".config" / "transmission-daemon" / "settings.json"
+def fixture_init_settings_json() -> None:
+    """Create test ``transmission-daemon`` settings file."""
+    settings = (
+        Path(appdirs.user_config_dir())
+        / "transmission-daemon"
+        / "settings.json"
+    )
     settings.parent.mkdir(parents=True)
     settings.write_text(SETTINGS_JSON)
 
