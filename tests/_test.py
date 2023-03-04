@@ -6,6 +6,7 @@ tests._test
 import typing as t
 from pathlib import Path
 
+import appdirs
 import pytest
 
 import turba
@@ -97,7 +98,6 @@ def test_basic(
 @pytest.mark.usefixtures(INIT_SETTINGS_JSON, INSTALL_TRANSMISSION_DAEMON)
 @pytest.mark.parametrize("downloading", [0, 1, 2])
 def test_already_downloading(
-    tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
     capsys: pytest.CaptureFixture,
     main: MockMainFixture,
@@ -105,7 +105,6 @@ def test_already_downloading(
 ) -> None:
     """Test process when a torrent collected is already downloading.
 
-    :param tmp_path: Create and return temporary directory.
     :param monkeypatch: Mock patch environment and attributes.
     :param capsys: Capture sys output.
     :param main: Mock package entry point.
@@ -113,8 +112,7 @@ def test_already_downloading(
     """
     not_downloading = [i for i in range(len(TORRENTS)) if i != downloading]
     torrent = (
-        tmp_path
-        / ".config"
+        Path(appdirs.user_config_dir())
         / "transmission-daemon"
         / "torrents"
         / TORRENTS[downloading].filename
@@ -141,7 +139,6 @@ def test_already_downloading(
 @pytest.mark.usefixtures(INIT_SETTINGS_JSON, INSTALL_TRANSMISSION_DAEMON)
 @pytest.mark.parametrize("blacklisted", [0, 1, 2])
 def test_blacklisted(
-    tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,
     capsys: pytest.CaptureFixture,
     main: MockMainFixture,
@@ -149,7 +146,6 @@ def test_blacklisted(
 ) -> None:
     """Test process when a torrent collected is blacklisted.
 
-    :param tmp_path: Create and return temporary directory.
     :param monkeypatch: Mock patch environment and attributes.
     :param capsys: Capture sys output.
     :param main: Mock package entry point.
@@ -157,7 +153,7 @@ def test_blacklisted(
     """
     not_blacklisted = [i for i in range(len(TORRENTS)) if i != blacklisted]
     mock_client = MockClient()
-    blacklist = tmp_path / ".config" / turba.__name__ / "blacklist"
+    blacklist = Path(appdirs.user_config_dir(turba.__name__)) / "blacklist"
     blacklist.parent.mkdir(parents=True)
     blacklist.write_text(TORRENTS[blacklisted].name)
     monkeypatch.setattr(CLIENT_PATH, lambda *_, **__: mock_client)
