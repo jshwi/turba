@@ -82,7 +82,6 @@ html_theme_options = {
     "site_url": "https://turba.readthedocs.io/",
     "repo_url": "https://github.com/jshwi/turba/",
     "repo_name": "turba",
-    "repo_type": "github",
     "edit_uri": "blob/master/docs",
     "globaltoc_collapse": True,
     "features": [
