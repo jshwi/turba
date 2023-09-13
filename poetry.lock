@@ -2507,13 +2507,13 @@ test = ["argcomplete (>=2.0)", "pre-commit", "pytest", "pytest-mock"]
 
 [[package]]
 name = "transmission-rpc"
-version = "6.0.0"
+version = "7.0.0"
 description = "Python module that implements the Transmission bittorent client JSON-RPC protocol"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "transmission_rpc-6.0.0-py3-none-any.whl", hash = "sha256:61ba831e1fdd5106f92b75d89f8453e42832681bebf03abefb5256e637dffb77"},
-    {file = "transmission_rpc-6.0.0.tar.gz", hash = "sha256:332e97ddec572c8fa448bddb26e62f7fc37969a09a70039a86e1f6514f089565"},
+    {file = "transmission_rpc-7.0.0-py3-none-any.whl", hash = "sha256:5b3b853188917aeaa729c59d7f496a813726b7a770dea8d5468cb51bc6052e30"},
+    {file = "transmission_rpc-7.0.0.tar.gz", hash = "sha256:e501505af5fe1b2e08fb907a40569ca558f3f31cab4ca56ce068ed79fee11aca"},
 ]
 
 [package.dependencies]
@@ -2742,4 +2742,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "8756a7bcc4b66f792dfc98b918a35bafec7d6b8ebafc05eff4c0e7c0c41d6f36"
+content-hash = "80fac6c166b80ce19587fc90cc5a5d28cfef5fa388d3ed288f8d32732e8a385a"

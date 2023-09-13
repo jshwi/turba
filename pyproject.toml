@@ -78,7 +78,7 @@ beautifulsoup4 = "^4.9.3"
 "bencode.py" = "^4.0.0"
 object-colors = "^2.1.0"
 python = "^3.8"
-transmission-rpc = ">=3.2.1,<7.0.0"
+transmission-rpc = ">=3.2.1,<8.0.0"
 
 [tool.poetry.dev-dependencies]
 bump2version = "^1.0.1"
