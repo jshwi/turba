@@ -137,13 +137,13 @@ class Settings(_MutableMapping[str, _t.Union[int, str]]):
         super().__init__()
         settings = _json.loads(path.read_text())
         self.update(
-            dict(
-                host=settings["rpc-host-whitelist"],
-                port=settings["rpc-port"],
-                username=settings["rpc-username"],
-                password=settings["rpc-password"],
-                path=f"{settings['rpc-url']}/rpc",
-            )
+            {
+                "host": settings["rpc-host-whitelist"],
+                "port": settings["rpc-port"],
+                "username": settings["rpc-username"],
+                "password": settings["rpc-password"],
+                "path": f"{settings['rpc-url']}/rpc",
+            }
         )
 
 
