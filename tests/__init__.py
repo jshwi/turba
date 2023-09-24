@@ -271,7 +271,7 @@ class MockClient(Client):
         super().__init__()
         self.added_torrents: t.List[str] = []
 
-    def get_session(self, timeout: float = None) -> Session:
+    def get_session(self, timeout: float = 0.0) -> Session:
         """Prevent actual session requests."""
 
     def add_torrent(  # pylint: disable=arguments-differ
