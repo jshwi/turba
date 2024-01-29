@@ -2,6 +2,7 @@
 docsig._objects
 ===============
 """
+
 import typing as _t
 
 T = _t.TypeVar("T")
@@ -19,34 +20,28 @@ class MutableSequence(_t.MutableSequence[T]):
         self._list.insert(index, value)
 
     @_t.overload
-    def __getitem__(self, i: int) -> T:
-        ...
+    def __getitem__(self, i: int) -> T: ...
 
     @_t.overload
-    def __getitem__(self, s: slice) -> _t.MutableSequence[T]:
-        ...
+    def __getitem__(self, s: slice) -> _t.MutableSequence[T]: ...
 
     def __getitem__(self, i):
         return self._list.__getitem__(i)
 
     @_t.overload
-    def __setitem__(self, i: int, o: T) -> None:
-        ...
+    def __setitem__(self, i: int, o: T) -> None: ...
 
     @_t.overload
-    def __setitem__(self, s: slice, o: _t.Iterable[T]) -> None:
-        ...
+    def __setitem__(self, s: slice, o: _t.Iterable[T]) -> None: ...
 
     def __setitem__(self, i, o):
         return self._list.__setitem__(i, o)
 
     @_t.overload
-    def __delitem__(self, i: int) -> None:
-        ...
+    def __delitem__(self, i: int) -> None: ...
 
     @_t.overload
-    def __delitem__(self, i: slice) -> None:
-        ...
+    def __delitem__(self, i: slice) -> None: ...
 
     def __delitem__(self, i):
         return self._list.__delitem__(i)
