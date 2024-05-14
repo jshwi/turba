@@ -2505,13 +2505,13 @@ test = ["argcomplete (>=3.0.3)", "mypy (>=1.7.0)", "pre-commit", "pytest (>=7.0,
 
 [[package]]
 name = "transmission-rpc"
-version = "7.0.4"
+version = "7.0.5"
 description = "Python module that implements the Transmission bittorent client JSON-RPC protocol"
 optional = false
 python-versions = "<4.0,>=3.8"
 files = [
-    {file = "transmission_rpc-7.0.4-py3-none-any.whl", hash = "sha256:0ff6f071040d2d1b7822304156fee25daba361e9f99e78b06e7a6266559c91ef"},
-    {file = "transmission_rpc-7.0.4.tar.gz", hash = "sha256:20428ad0007e7632c89af6a1e26278181148da84ced16d3ff58ecec5f65405a4"},
+    {file = "transmission_rpc-7.0.5-py3-none-any.whl", hash = "sha256:bb9f9400d99362e41b33cf787aaf74f52a03c8fa901c31276007e256d23c3ec6"},
+    {file = "transmission_rpc-7.0.5.tar.gz", hash = "sha256:f1a0a834309cc3d94ea05b7c841706606f92cdadc0c5a684b1e725a336c35566"},
 ]
 
 [package.dependencies]
