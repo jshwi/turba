@@ -52,4 +52,4 @@ def main() -> None:
     if approved:
         client.add_torrents(*approved.values())
         print("the following unmatched torrents have just been added:")
-        print("- {}".format("\n- ".join(approved.keys())))
+        print(f"- {'\\n- '.join(approved.keys())}")
